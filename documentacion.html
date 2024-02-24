@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+    <link rel="stylesheet" href="./assets/documentacion.css">
+</head>
+
+<body>
+    <section class="contenedor">
+        <a href="index.html" style="--color:#3A3A3A;" class="btn-funcion btn-documentacion">Ir a Inicio</a>
+        <h1 class="titulo">Animaciones y transiciones <span class="txt-animado">CSS</span></h1>
+        <h2 class="subtitulo">Explora y domina la creación de <span class="txt-animado">Animaciones y
+                Transiciones</span> dinámicas en tus <span class="txt-animado">Páginas Web</span> utilizando CSS.</h2>
+        <nav class="bar-navegacion">
+            <ul>
+                <li class="doc-selec" style="--color:#ff7360;">Todas</li>
+                <li class="doc-selec" style="--color:#84b6f4;">Transiciones</li>
+                <li class="doc-selec" style="--color:#f74fd0;">Animaciones</li>
+                <li class="doc-selec" style="--color:#52ff70;">Propiedades no animables</li>
+            </ul>
+            <div class="bar-seleccion"><i class="progre-bar"></i></div>
+        </nav>
+
+        <div class="articulos-transicion">
+            <div class="articulo-info">
+                <h2>transition-property</h2>
+                <div style="--color:#3A3A3A;" class="info-aplicada">
+                    transition-property: background-color;
+                </div>
+                <div class="descripcion-art">
+                    Especifica las propiedades CSS sobre las cuales se aplicará la transición. Puedes especificar una
+                    propiedad específica, como opacity o transform, o usar el valor all para aplicar la transición a
+                    todas las propiedades animables.
+                </div>
+            </div>
+
+            <div class="articulo-info">
+                <h2>transition-duration</h2>
+                <div style="--color:#f74fd0;" class="info-aplicada">
+                    transition-duration: 0.5s;
+                </div>
+                <div class="descripcion-art">
+                    Define la duración que tomará realizar la transición de una propiedad, especificada en segundos (s)
+                    o milisegundos (ms). Este valor determina qué tan rápido o lento se produce el cambio de estado.
+                </div>
+            </div>
+
+            <div class="articulo-info">
+                <h2>transition-timing-function</h2>
+                <div style="--color:#84b6f4;" class="info-aplicada">
+                    transition-timing-function: ease-in-out;
+                </div>
+                <div class="descripcion-art">
+                    Controla la velocidad de la transición a lo largo de su duración, permitiendo que la transición
+                    acelere o desacelere según una curva de velocidad definida. Los valores predefinidos incluyen
+                    linear, ease, ease-in, ease-out, ease-in-out, o una función cubic-bezier para una curva de velocidad
+                    personalizada. Consulta <a href="https://easings.com">easings.com</a> para más detalles.
+                </div>
+            </div>
+
+            <div class="articulo-info">
+                <h2>transition-delay</h2>
+                <div style="--color:#52ff70;" class="info-aplicada">
+                    transition-delay: 0.2s;
+                </div>
+                <div class="descripcion-art">
+                    Establece un tiempo de espera antes de que inicie la transición. Esto puede ser útil para coordinar
+                    múltiples transiciones o para esperar que otro evento ocurra antes de comenzar la animación. Al
+                    igual que transition-duration, se especifica en segundos (s) o milisegundos (ms).
+                </div>
+            </div>
+
+            <div class="articulo-info">
+                <h2>Atajo de transition</h2>
+                <div style="--color:#ffda9e;" class="info-aplicada">
+                    transition: background-color 0.5s ease-in-out 0.2s;
+                </div>
+                <div class="descripcion-art">
+                    Este atajo de transition permite combinar todas las propiedades individuales de transición
+                    (transition-property, transition-duration, transition-timing-function, y transition-delay) en una
+                    sola declaración.
+                </div>
+            </div>
+        </div>
+
+        <div class="articulos-animaciones">
+
+            <div class="articulo-info">
+                <h2>@keyframes</h2>
+                <div style="--color:#9b9b9b;" class="info-aplicada">
+                    @keyframes nombreAnimacion { <br>
+                    from { /* estado inicial */ }<br>
+                    to { /* estado final */ }<br>
+                    }
+                </div>
+                <div class="descripcion-art">
+                    O utilizando porcentajes para mayor control:
+                </div>
+                <div style="--color:#9b9b9b;" class="info-aplicada">
+                    @keyframes nombreAnimacion {<br>
+                    0% { /* estado inicial */ }<br>
+                    50% { /* estado intermedio */ }<br>
+                    100% { /* estado final */ }<br>
+                    }
+                </div>
+            </div>
+
+            <div class="articulo-info">
+                <h2>animation-name</h2>
+                <div style="--color:#84b6f4;" class="info-aplicada">
+                    animation-name: miAnimacion;
+                </div>
+                <div class="descripcion-art">
+                    Especifica el nombre de la animación, el cual debe coincidir con el nombre definido en @keyframes.
+                </div>
+            </div>
+
+            <div class="articulo-info">
+                <h2>animation-duration</h2>
+                <div style="--color:#7ff9c7;" class="info-aplicada">
+                    animation-duration: 2s;
+                </div>
+                <div class="descripcion-art">
+                    Define cuánto tiempo toma completar un ciclo de la animación, especificado en segundos (s) o
+                    milisegundos (ms).
+                </div>
+            </div>
+
+            <div class="articulo-info">
+                <h2>animation-timing-function</h2>
+                <div style="--color:#fabfb7;" class="info-aplicada">
+                    animation-timing-function: ease-in-out;
+                </div>
+                <div class="descripcion-art">
+                    Describe cómo el ritmo de la animación cambia a lo largo de su duración. Los valores comunes
+                    incluyen linear, ease, ease-in, ease-out, y ease-in-out.
+                </div>
+            </div>
+
+            <div class="articulo-info">
+                <h2>animation-delay</h2>
+                <div style="--color:#ff7360;" class="info-aplicada">
+                    animation-delay: 1s;
+                </div>
+                <div class="descripcion-art">
+                    Establece un tiempo de espera antes de que comience la animación, también en segundos (s) o
+                    milisegundos (ms).
+                </div>
+            </div>
+
+            <div class="articulo-info">
+                <h2>animation-iteration-count</h2>
+                <div style="--color:#3A3A3A;" class="info-aplicada">
+                    animation-iteration-count: infinite;
+                </div>
+                <div class="descripcion-art">
+                    Indica cuántas veces se debe repetir la animación. Puede ser un número o infinite para una
+                    repetición ilimitada.
+                </div>
+            </div>
+
+            <div class="articulo-info">
+                <h2>animation-direction</h2>
+                <div style="--color:#f74fd0;" class="info-aplicada">
+                    animation-direction: alternate;
+                </div>
+                <div class="descripcion-art">
+                    Define si la animación debe alternar la dirección en cada ciclo. Los valores pueden ser normal,
+                    reverse, alternate, y alternate-reverse.
+                </div>
+            </div>
+
+            <div class="articulo-info">
+                <h2>animation-fill-mode</h2>
+                <div style="--color:#52ff70;" class="info-aplicada">
+                    animation-fill-mode: both;
+                </div>
+                <div class="descripcion-art">
+                    Especifica estilos a aplicar antes de que empiece la animación (none, forwards, backwards, both),
+                    controlando cómo un elemento animado aparece antes y después de la animación.
+                </div>
+            </div>
+
+            <div class="articulo-info">
+                <h2>animation-play-state</h2>
+                <div style="--color:#fabfb7;" class="info-aplicada">
+                    animation-play-state: paused;
+                </div>
+                <div class="descripcion-art">
+                    Permite pausar y reanudar la animación con paused y running.
+                </div>
+            </div>
+
+            <div class="articulo-info">
+                <h2>Atajo de animation</h2>
+                <div style="--color:#ffda9e;" class="info-aplicada">
+                    animation: miAnimacion 2s ease-in-out 1s infinite alternate both;
+                </div>
+                <div class="descripcion-art">
+                    Puedes combinar todos estos componentes en una sola propiedad animation para simplificar tu código.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="articulos-propiedades">
+
+            <div class="articulo-info">
+                <h2>Propiedades no animables</h2>
+                <div class="descripcion-art">
+                    <ul>
+                        <li class="no-animables" style="--color: #52ff70;">display</li>
+                        <li class="no-animables" style="--color: #9b9b9b;">z-index</li>
+                        <li class="no-animables" style="--color: #3A3A3A;">position</li>
+                        <li class="no-animables" style="--color: #7ff9c7;">content</li>
+                        <li class="no-animables" style="--color: #ff7360;">visibility</li>
+                        <li class="no-animables" style="--color: #fabfb7;">column-count</li>
+                        <li class="no-animables" style="--color: #84b6f4;">column-gap</li>
+                        <li class="no-animables" style="--color: #ffda9e;">font-family</li>
+                        <li class="no-animables" style="--color: #f74fd0;">white-space</li>
+                        <li class="no-animables" style="--color: #ff7360;">line-height</li>
+                        <li class="no-animables" style="--color: #9b9b9b;">background-image</li>
+                        <li class="no-animables" style="--color: #52ff70;">border-style</li>
+                        <li class="no-animables" style="--color: #ffda9e;">cursor</li>
+                        <li class="no-animables" style="--color: #f74fd0;">direction</li>
+                        <li class="no-animables" style="--color: #3A3A3A;">list-style-image</li>
+                        <li class="no-animables" style="--color: #7ff9c7;">list-style-type</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <script src="/js/documentacion.js"></script>
+</body>
+
+</html>

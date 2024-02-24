@@ -1,0 +1,485 @@
+:root {
+  --color-verde: #52ff70;
+  --color-gris: #9b9b9b;
+  --color-oscuro: #3A3A3A;
+  --color-verde-claro: #7ff9c7;
+  --color-blanco: #ffffff;
+  --color-azul-claro: #84b6f4;
+  --color-lila-claro: #e79eff;
+  --color-naranja: #ff7360;
+  --color-rosa-claro: #fabfb7;
+  --color-amarillo-claro: #fdf9c4;
+  --color-durazno-claro: #ffda9e;
+  --color-magenta-claro: #f74fd0;
+}
+
+@font-face {
+  font-family: 'Nunito ExtraLight';
+  src: url('./fuente/static/Nunito-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito Light';
+  src: url('./fuente/static/Nunito-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito Regular';
+  src: url('./fuente/static/Nunito-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito Medium';
+  src: url('./fuente/static/Nunito-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito SemiBold';
+  src: url('./fuente/static/Nunito-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito Bold';
+  src: url('./fuente/static/Nunito-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito ExtraBold';
+  src: url('./fuente/static/Nunito-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito Black';
+  src: url('./fuente/static/Nunito-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Nunito Regular', sans-serif;
+}
+
+.contenedor {
+  display: block;
+  margin: 30px auto;
+  width: 720px;
+}
+
+.btn-funcion{
+  display: inline;
+  float: right;
+  margin-right:25px;
+  margin-bottom: 20PX;
+  padding: 5px;
+  background-color: var(--color-blanco);
+  font-size: 11px;
+  color: var(--color);
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 1;
+  transition: opacity linear .3s;
+}
+
+.btn-funcion:hover{
+  opacity: 1;
+}
+
+.btn-funcion::after{
+content: '';
+display: block;
+margin: 0px auto;
+width: 10%;
+height: 3px;
+border-radius: 5px;
+background-color: var(--color);
+transition: width linear .2s;
+}
+
+.btn-funcion:hover::after{
+  width: 80%;
+}
+
+.titulo {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 28px;
+  clear: both;
+}
+
+.txt-animado {
+  font-weight: 600;
+  animation: txtColor linear infinite 20s;
+}
+
+@keyframes txtColor {
+  0% {
+    color: var(--color-oscuro);
+  }
+
+  20% {
+    color: var(--color-azul-claro);
+  }
+
+  30% {
+    color: var(--color-magenta-claro);
+  }
+
+  40% {
+    color: var(--color-naranja);
+  }
+
+  50% {
+    color: var(--color-lila-claro);
+  }
+
+  60% {
+    color: var(--color-verde);
+  }
+
+  70% {
+    color: var(--color-verde-claro);
+  }
+
+  80% {
+    color: var(--color-gris);
+  }
+
+  90% {
+    color: var(--color-durazno-claro);
+  }
+
+  100% {
+    color: var(--color-oscuro);
+  }
+}
+
+.subtitulo {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.cartas , .cartas-t2{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border: 3px solid var(--color);
+  border-radius: 10px;
+  background-color: var(--color-blanco);
+  margin: 0px 0px 25px 25px;
+  transition-property: background-color;
+  transition-duration: .3s;
+  color: var(--color);
+  transition-timing-function: linear;
+}
+
+.cartas-t2{
+  background-color: var(--color);
+  transition-property: border, background-color;
+  transition-duration: .3s;
+}
+.cartas-t2:hover{
+  background-color: var(--color-blanco);
+}
+
+.cartas:hover {
+  background-color: var(--color);
+}
+
+/*Transicion 1*/
+
+.transicion-1 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: var(--color);
+  margin: 50px auto;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: .3s;
+  transition-timing-function: linear;
+}
+
+.cartas:hover .transicion-1 {
+  background-color: var(--color-blanco);
+}
+
+/*Transicion 2*/
+
+.transicion-2 .recuadros{
+  display: block;
+  float: left;
+  margin: 10px;
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  background-color: var(--color);
+  transition: background-color .3s linear, transform .5s ease, opacity .4s linear;
+  transform: scale(.5);
+  opacity: .2;
+}
+
+.cartas:hover .transicion-2 .recuadros{
+background-color: var(--color-blanco);
+transform: scale(1);
+opacity: 1;
+}
+
+.recuadros:nth-child(1){
+  transition-delay: 0ms;
+}
+
+.recuadros:nth-child(2){
+  transition-delay: 100ms;
+}
+
+.recuadros:nth-child(3){
+  transition-delay: 300ms;
+}
+
+.recuadros:nth-child(4){
+  transition-delay: 100ms;
+}
+
+.recuadros:nth-child(5){
+  transition-delay: 300ms;
+}
+
+.recuadros:nth-child(6){
+  transition-delay: 400ms;
+}
+
+.recuadros:nth-child(7){
+  transition-delay: 300ms;
+}
+
+.recuadros:nth-child(8){
+  transition-delay: 400ms;
+}
+
+.recuadros:nth-child(9){
+  transition-delay: 500ms;
+}
+
+/*Transicion 3*/
+
+.transicion-3 .elementos {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: var(--color);
+  margin: 20px;
+  transition-duration: 500ms;
+  transition-property: width, background-color, border-radius;
+  transition-timing-function: ease;
+}
+
+.transicion-3 .elementos::before {
+  display: block;
+  content: '';
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  position: absolute;
+  background-color: var(--color-blanco);
+  transition-duration: 500ms;
+  transition-property: margin, width, height, background-color;
+  transition-timing-function: ease;
+}
+
+.cartas:hover .transicion-3 .elementos {
+  width: 160px;
+  border-radius: 10px;
+  background-color: var(--color-blanco);
+}
+
+.cartas:hover .transicion-3 .elemento-1 {
+  transition-delay: 100ms;
+}
+
+.cartas:hover .transicion-3 .elemento-2 {
+  transition-delay: 300ms;
+}
+
+.cartas:hover .transicion-3 .elemento-3 {
+  transition-delay: 500ms;
+}
+
+.cartas .transicion-3 .elemento-1 {
+  transition-delay: 100ms;
+}
+
+.cartas .transicion-3 .elemento-2 {
+  transition-delay: 300ms;
+}
+
+.cartas .transicion-3 .elemento-3 {
+  transition-delay: 500ms;
+}
+
+.cartas:hover .transicion-3 .elementos::before {
+  animation-duration: 300ms;
+  margin: 15px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color);
+}
+
+.btn-cartas{
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 500;
+  background-color: var(--color);
+  color: var(--color-blanco);
+  cursor: pointer;
+  transition:  background-color .3s linear, color .3s linear, font-weight .2s;
+}
+
+.btn-cartas:hover{
+  background-color: var(--color-blanco);
+  color: var(--color);
+  font-weight: 600;
+}
+
+.animacion-1{
+  border-radius: 50px;
+  margin: 75px auto;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color);
+  box-shadow: 0px 0px 0px 5px rgba(132, 182, 244, 0.5);
+  transition: background-color .3s linear;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-name: respiracion;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.cartas:hover .animacion-1{
+  background-color: var(--color-blanco);
+  box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes respiracion {
+  to{
+    box-shadow: 0px 0px 0px 20px rgba(132, 182, 244, 0.5);
+  }
+}
+
+
+.animacion-2{
+display: block;
+margin: 10px;
+width: 10px;
+height: 10px;
+border-radius: 10px;
+background-color: var(--color);
+animation: rebotar 2s ease-in-out alternate infinite;
+transition: background-color .3s linear;
+}
+.animaciones:hover .animacion-2{
+background-color: var(--color-blanco);
+}
+
+.animacion-3{
+  display: block;
+  margin: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--color);
+  animation: rebotar 2s cubic-bezier(0,1.89,.97,-0.92) alternate infinite;
+  animation-timing-function: cubic-bezier(.97,.7,.97,-0.92);
+  animation-timing-function: cubic-bezier(.97,1.35,0,-0.43);
+  animation-timing-function: cubic-bezier(1,-0.1,.09,.97);
+  transition: background-color .3s linear;
+}
+
+/*https://cubic-bezier.com*/
+
+.animaciones:hover .animacion-3{
+  background-color: var(--color-blanco);
+}
+
+@keyframes rebotar {
+  from{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  to{
+    margin-top: 180px;
+    margin-left: 180px;
+  }
+}
+
+.figura{
+  display: block;
+  margin: 50px;
+  height: 100px;
+  width: 100px;
+  background-color: var(--color-blanco);
+  transition: border-radius .3s linear, background-color .3s linear;
+}
+.cartas-t2:hover .figura {
+  background-color: var(--color);
+}
+
+
+.cuadrado{
+border-radius: 10px;
+}
+
+.circulo{
+border-radius: 50px;
+}
+
+.btn-grande{
+  width: 675.5px;
+  height: 100px;
+  line-height: 30px;
+  padding: 30px 0px 30px 0px;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.btn-grande:hover{
+  animation: arcoiris 10s linear infinite;
+}
+
+.cartas-t2, .cartas{
+  animation: aparicion auto linear both;
+  animation-timeline: view();
+  animation-range: entry 5% cover 15%;
+}
+
+@keyframes aparicion {
+  from{
+    opacity: .5;
+    transform: scale(.9);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
