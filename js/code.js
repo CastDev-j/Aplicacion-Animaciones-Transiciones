@@ -1,9 +1,9 @@
-var animacionbtnUno = document.querySelector('#animacionUno')
-var animacionbtnDos = document.querySelector('#animacionDos')
-var animacionbtnTres = document.querySelector('#animacionTres')
-var animacionUno = document.querySelector('.animacion-1')
-var animacionDos = document.querySelector('.animacion-2')
-var animacionTres = document.querySelector('.animacion-3')
+const animacionbtnUno = document.querySelector('#animacionUno')
+const animacionbtnDos = document.querySelector('#animacionDos')
+const animacionbtnTres = document.querySelector('#animacionTres')
+const animacionUno = document.querySelector('.animacion-1')
+const animacionDos = document.querySelector('.animacion-2')
+const animacionTres = document.querySelector('.animacion-3')
 
 
 estadoUno = 'reproduciendo'
