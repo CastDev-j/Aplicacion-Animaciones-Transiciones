@@ -1,8 +1,8 @@
-elementos = document.querySelectorAll('.doc-selec')
-barra = document.querySelector('.progre-bar')
-artTransiciones = document.querySelector('.articulos-transicion')
-artAnimaciones = document.querySelector('.articulos-animaciones')
-artPropiedades = document.querySelector('.articulos-propiedades')
+const elementos = document.querySelectorAll('.doc-selec')
+const barra = document.querySelector('.progre-bar')
+const artTransiciones = document.querySelector('.articulos-transicion')
+const artAnimaciones = document.querySelector('.articulos-animaciones')
+const artPropiedades = document.querySelector('.articulos-propiedades')
 
 elementos.forEach(function (elemento) {
     elemento.addEventListener('click', function () {
