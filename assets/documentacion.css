@@ -269,3 +269,114 @@ border-radius: 3px;
   border-radius: 10px;
   font-weight: 600;
 }
+
+.contenedor-cartas-propiedades{
+  width: 100%;
+}
+
+.carta{
+  width: 180px;
+  padding: 10px;
+  margin: 10px;
+  background-color: var(--color-azul-claro);
+  color: var(--color-blanco);
+  font-weight: 500;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.bola {
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-blanco);
+  border-radius: 50%;
+  position: relative;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: initial;
+  animation-direction: alternate;
+}
+
+.bola-linear {
+  animation-timing-function: linear;
+}
+
+.bola-ease {
+  animation-timing-function: ease;
+}
+
+.bola-ease-in {
+  animation-timing-function: ease-in;
+}
+
+.bola-ease-out {
+  animation-timing-function: ease-out;
+}
+
+.bola-ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+
+.bola-cubic-bezier {
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); 
+}
+
+@keyframes moverBola {
+  from {left: 0%;}
+  to {left: 90%;}
+}
+
+.contenedor-cartas-dire .carta{
+  width: 140px;
+  margin: 5px;
+  padding: 10px 5px;
+  background-color: var(--color-magenta-claro);
+}
+
+.contenedor-cartas-dire .carta .texto{
+display: block;
+float: right;
+width: 80px;
+text-align: center;
+}
+
+.carta-dire {
+  width: 40px;
+  height: 20px;
+  background-color: var(--color-blanco);
+  margin: 10px;
+  display: inline-block;
+  animation-name: acostarYHacerGrande;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+
+.carta-normal {
+  animation-direction: normal;
+}
+
+.carta-reverse {
+  animation-direction: reverse;
+}
+
+.carta-alternate {
+  animation-direction: alternate;
+}
+
+.carta-alternate-reverse {
+  animation-direction: alternate-reverse;
+}
+
+@keyframes acostarYHacerGrande {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+
