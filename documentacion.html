@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica</title>
     <link rel="stylesheet" href="./assets/documentacion.css">
+    <link rel="shortcut icon" href="assets/icons8-huella-de-gato-32.png" type="image/x-icon">
 </head>
 
 <body>
@@ -58,6 +59,34 @@
                     acelere o desacelere según una curva de velocidad definida. Los valores predefinidos incluyen
                     linear, ease, ease-in, ease-out, ease-in-out, o una función cubic-bezier para una curva de velocidad
                     personalizada.
+
+                    <div class="contenedor-cartas-propiedades">
+                        <div class="carta">
+                            <div class="bola bola-linear" style="animation-name: moverBola;"></div>
+                            linear
+                        </div>
+                        <div class="carta">
+                            <div class="bola bola-ease" style="animation-name: moverBola;"></div>
+                            ease
+                        </div>
+                        <div class="carta">
+                            <div class="bola bola-ease-in" style="animation-name: moverBola;"></div>
+                            ease-in
+                        </div>
+                        <div class="carta">
+                            <div class="bola bola-ease-out" style="animation-name: moverBola;"></div>
+                            ease-out
+                        </div>
+                        <div class="carta">
+                            <div class="bola bola-ease-in-out" style="animation-name: moverBola;"></div>
+                            ease-in-out
+                        </div>
+                        <div class="carta">
+                            <div class="bola bola-cubic-bezier" style="animation-name: moverBola;"></div>
+                            cubic-bezier(0.68, -0.55, 0.27, 1.55)
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -170,6 +199,25 @@
                 <div class="descripcion-art">
                     Define si la animación debe alternar la dirección en cada ciclo. Los valores pueden ser normal,
                     reverse, alternate, y alternate-reverse.
+
+                    <div class="contenedor-cartas-propiedades contenedor-cartas-dire">
+                        <div class="carta">
+                            <div class="carta-dire carta-normal"></div>
+                            <span class="texto">normal</span>
+                        </div>
+                        <div class="carta">
+                            <div class="carta-dire carta-reverse"></div>
+                            <span class="texto">reverse</span>
+                        </div>
+                        <div class="carta">
+                            <div class="carta-dire carta-alternate"></div>
+                            <span class="texto">alternate</span>
+                        </div>
+                        <div class="carta">
+                            <div class="carta-dire carta-alternate-reverse"></div>
+                            <span class="texto">alternate-reverse</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -182,27 +230,34 @@
                     Especifica estilos a aplicar antes de que empiece la animación (none, forwards, backwards, both),
                     controlando cómo un elemento animado aparece antes y después de la animación.
                 </div>
-            </div>
-
-            <div class="articulo-info">
-                <h2>animation-play-state</h2>
-                <div style="--color:#fabfb7;" class="info-aplicada">
-                    animation-play-state: paused;
-                </div>
                 <div class="descripcion-art">
-                    Permite pausar y reanudar la animación con paused y running.
+                    none: La animación no afecta el estilo antes de comenzar o después de terminar. <br>
+                    forwards: Después de terminar la animación, mantiene el estado final.<br>
+                    backwards: Comienza en el estado final de la animación antes de comenzarla.<br>
+                    both: Combina los efectos de forwards y backwards, mostrando el estado final antes de
                 </div>
             </div>
+        </div>
 
-            <div class="articulo-info">
-                <h2>Atajo de animation</h2>
-                <div style="--color:#ffda9e;" class="info-aplicada">
-                    animation: miAnimacion 2s ease-in-out 1s infinite alternate both;
-                </div>
-                <div class="descripcion-art">
-                    Puedes combinar todos estos componentes en una sola propiedad animation para simplificar tu código.
-                </div>
+        <div class="articulo-info">
+            <h2>animation-play-state</h2>
+            <div style="--color:#fabfb7;" class="info-aplicada">
+                animation-play-state: paused;
             </div>
+            <div class="descripcion-art">
+                Permite pausar y reanudar la animación con paused y running.
+            </div>
+        </div>
+
+        <div class="articulo-info">
+            <h2>Atajo de animation</h2>
+            <div style="--color:#ffda9e;" class="info-aplicada">
+                animation: miAnimacion 2s ease-in-out 1s infinite alternate both;
+            </div>
+            <div class="descripcion-art">
+                Este atajo permite combinar animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, y animation-fill-mode en una sola declaración.
+            </div>
+        </div>
 
         </div>
 
